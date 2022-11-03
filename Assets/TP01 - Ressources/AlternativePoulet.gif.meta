@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 8e47ad4ba56652747afeb672834704af
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlternativePoulet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a54e0625c4bc6f44a4fee9a665fb282
+      internalID: 384560322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5600171d48aaf4c40b4ef40c978029d4
+      internalID: 1910158180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361e64a65d34b0842a7942caf1cd936b
+      internalID: 1276191223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a91f908fe5400c42b7665b4ff8ab0da
+      internalID: 806483192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1e8ed42f0364f4c94880f3aa86f832
+      internalID: 940588468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103052f777c3fb6458c6cac50ddf7fd3
+      internalID: 1904261531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 93.33333
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074e02add094c704eabf3806dd7c938a
+      internalID: -1596858858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f6b03c0d0465e459ca816b40aae862
+      internalID: -212747946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa9421aba3ba3f428674bc4cb55380a
+      internalID: 1865874836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85bb1bf607c9854d8edcc23457ce5cd
+      internalID: -1776786110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455aeca1dc9193349b7a1b4ad9b3ff56
+      internalID: -455748927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e07c4d7f62a224c9e0aa20ecef1ed5
+      internalID: 963121640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901f392dd1e4b0f40833f5a0aec7c203
+      internalID: -1641018558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 47.333332
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd042e3f4e0656f4ca19a0cc1e9acaa7
+      internalID: 1733328090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11679adf4eb7eeb469846e0160b15833
+      internalID: -1711333295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_15
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bb2fd5ebf957f4ba5008a4d9a3fc49
+      internalID: -1246840424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_16
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a53f92f8afbfd4286f60f20a65b806
+      internalID: 1940257920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_17
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b16db48b88ac84299be1260553ddc2
+      internalID: -498563100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d38628f70bf3e48b3bd82e6c35a6ff
+      internalID: -961512537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04341c6fddb730448c1519a861038d7
+      internalID: -609985428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlternativePoulet_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1.3333321
+        width: 46.857143
+        height: 46.666668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74bd4ace9748d245ad0b9af62020379
+      internalID: -1862719616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AlternativePoulet_2: 1276191223
+      AlternativePoulet_15: -1246840424
+      AlternativePoulet_5: 1904261531
+      AlternativePoulet_0: 384560322
+      AlternativePoulet_17: -498563100
+      AlternativePoulet_4: 940588468
+      AlternativePoulet_7: -212747946
+      AlternativePoulet_11: 963121640
+      AlternativePoulet_19: -609985428
+      AlternativePoulet_16: 1940257920
+      AlternativePoulet_13: 1733328090
+      AlternativePoulet_18: -961512537
+      AlternativePoulet_12: -1641018558
+      AlternativePoulet_20: -1862719616
+      AlternativePoulet_14: -1711333295
+      AlternativePoulet_6: -1596858858
+      AlternativePoulet_3: 806483192
+      AlternativePoulet_8: 1865874836
+      AlternativePoulet_10: -455748927
+      AlternativePoulet_9: -1776786110
+      AlternativePoulet_1: 1910158180
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

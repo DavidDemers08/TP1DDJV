@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sol
+    uniqueID: 1418549611
+    locked: 0
+  - name: Decorations
+    uniqueID: 716158649
+    locked: 0
+  - name: Joueur
+    uniqueID: 2084815771
+    locked: 0
+  - name: Mur
+    uniqueID: 2085524651
+    locked: 0
+  - name: Fondu
+    uniqueID: 174204157
+    locked: 0
