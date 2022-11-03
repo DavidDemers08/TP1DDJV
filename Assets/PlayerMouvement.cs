@@ -28,6 +28,8 @@ public class PlayerMouvement : MonoBehaviour
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.y = Input.GetAxisRaw("Vertical");
 
+        
+
         Debug.Log(direction.x);
         Debug.Log(direction.y);
 
@@ -37,6 +39,7 @@ public class PlayerMouvement : MonoBehaviour
             anim.SetFloat("LastV", direction.y);
         }
 
+        direction.Normalize();
         rb.velocity = direction * vitesse;
     }
 }
