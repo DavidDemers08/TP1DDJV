@@ -32,6 +32,22 @@ public class FonduAuNoir : MonoBehaviour
         sprite.color = col;
     }
 
+    private IEnumerator FadeOut()
+    {
+        Color col = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+        sprite.color = col;
+        for (float a = 0; a < 1; a += 0.05f)
+        {
+            col.a = a;
+            sprite.color = col;
+            yield return new WaitForSeconds(.02f);
+        }
+        col.a = 1f;
+        sprite.color = col;
+    }
+
+
+
     // Update is called once per frame
     void Update()
     {
