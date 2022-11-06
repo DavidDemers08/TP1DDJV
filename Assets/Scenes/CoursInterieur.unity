@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 313487554087536469, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
       propertyPath: vitesse
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 397510267394532104, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
       propertyPath: m_Name
