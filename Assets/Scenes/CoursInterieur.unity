@@ -214,18 +214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 313487554087536469, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: roti
-      value: 
-      objectReference: {fileID: 1203783061245016183, guid: f9e634cef9d03e94e822231af0b538c5, type: 3}
-    - target: {fileID: 313487554087536469, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: vitesse
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 313487554087536469, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: deathAnimation
-      value: 
-      objectReference: {fileID: 148200698983008754, guid: 4981f87524adfb742b0d26b691fa5696, type: 3}
     - target: {fileID: 397510267394532104, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
       propertyPath: m_Name
       value: Poulet
@@ -272,18 +260,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 397510267394532111, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628194862330516885, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: m_Mass
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628194862330516885, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628194862330516885, guid: cbf49436c7f68a74fbd6828bdb6981a5, type: 3}
-      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
