@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FonduAuNoir : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class FonduAuNoir : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    private IEnumerator FadeIn()
+    public IEnumerator FadeIn()
     {
         Color col = new Color(0.0f, 0.0f, 0.0f, 1.0f);
         sprite.color = col;
@@ -32,9 +33,9 @@ public class FonduAuNoir : MonoBehaviour
         sprite.color = col;
     }
 
-    private IEnumerator FadeOut()
+    public IEnumerator FadeOut()
     {
-        Color col = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+        Color col = new(0.0f, 0.0f, 0.0f, 1.0f);
         sprite.color = col;
         for (float a = 0; a < 1; a += 0.05f)
         {
@@ -44,6 +45,8 @@ public class FonduAuNoir : MonoBehaviour
         }
         col.a = 1f;
         sprite.color = col;
+
+        SceneManager.LoadScene(0);
     }
 
 

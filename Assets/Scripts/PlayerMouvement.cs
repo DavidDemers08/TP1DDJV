@@ -1,20 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMouvement : MonoBehaviour
 {
     [SerializeField] private float vitesse = 5;
     [SerializeField] private GameObject deathAnimation;
     private Rigidbody2D rb;
-    private Vector2 direction;
-    private Vector2 lastDirection;
     private Animator anim;
+    private Vector2 direction;
+    private bool deathAnimFinished = false;
+
     private bool enControle = true;
-    [SerializeField]private GameObject roti;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -23,7 +25,8 @@ public class PlayerMouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("Loop");
+        Debug.Log(enControle);
         if (enControle)
         {
             anim.SetFloat("Horizontal", direction.x);
@@ -49,25 +52,33 @@ public class PlayerMouvement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        DeathSequence();
+    }
+
+    private void DeathSequence()
+    {
         enControle = false;
-        Destroy(this.gameObject);
-        GameObject animation = Instantiate(deathAnimation, transform.position,Quaternion.identity);
-        GameObject pouletRoti = Instantiate(roti, transform.position,Quaternion.identity);
-        StartCoroutine(FinAnimation(animation));
+        Instantiate(deathAnimation, transform.position, Quaternion.identity);
+        StartCoroutine(Death());
         
+       
         
     }
 
-    private IEnumerator FinAnimation(GameObject deathAnimation)
+    private IEnumerator Death()
     {
-        yield return new WaitForSeconds(5f);
-        Destroy(deathAnimation);
-        
-        
+        yield return new WaitForSeconds(1f);
+        anim.SetBool("Dead", true);
+        StartCoroutine(FadeOut());
+    }
+
+    private IEnumerator FadeOut()
+    {
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(FindObjectOfType<FonduAuNoir>().FadeOut());
     }
 }
