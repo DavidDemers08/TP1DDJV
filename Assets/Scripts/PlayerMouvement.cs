@@ -91,6 +91,7 @@ public class PlayerMouvement : MonoBehaviour
         Instantiate(deathAnimation, transform.position, Quaternion.identity);
         StartCoroutine(Death());
         
+        
        
         
     }
@@ -100,6 +101,9 @@ public class PlayerMouvement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         anim.SetBool("Dead", true);
         StartCoroutine(FadeOut());
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(0);
+
     }
 
     private IEnumerator FadeOut()
