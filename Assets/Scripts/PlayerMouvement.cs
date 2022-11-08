@@ -61,6 +61,11 @@ public class PlayerMouvement : MonoBehaviour
         
     }
 
+    public void LaserHit()
+    {
+        DeathSequence();
+    }
+
     private void DeathSequence()
     {
         enControle = false;
