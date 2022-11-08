@@ -19926,10 +19926,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+
     - target: {fileID: 1674962955404335799, guid: 6ce5bdbce415c3844923e9f965c04253, type: 3}
       propertyPath: m_Name
       value: Lama (2)
       objectReference: {fileID: 0}
+
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ce5bdbce415c3844923e9f965c04253, type: 3}
 --- !u!1 &1602523368
@@ -20057,6 +20059,7 @@ Material:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
+
 --- !u!1 &1692089779
 GameObject:
   m_ObjectHideFlags: 0
@@ -23980,13 +23983,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ce5bdbce415c3844923e9f965c04253, type: 3}
+
 --- !u!1001 &6372403415400334171
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+
     - target: {fileID: 6372403414021527239, guid: ab1a9c969abd1a746928c862d2096a0a, type: 3}
       propertyPath: m_lineColor.b
       value: 0
@@ -24057,3 +24063,4 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab1a9c969abd1a746928c862d2096a0a, type: 3}
+
