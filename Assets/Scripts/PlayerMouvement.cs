@@ -14,6 +14,7 @@ public class PlayerMouvement : MonoBehaviour
 
 
     public bool enControle = true;
+    private int index;
 
     // Start is called before the first frame update
     void Awake()
@@ -58,7 +59,21 @@ public class PlayerMouvement : MonoBehaviour
         {
             DeathSequence();
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Oeuf"))
+        {
+            StartCoroutine(NextLevel());
+        }
         
+    }
+
+    private IEnumerator NextLevel()
+    {
+        StartCoroutine(FindObjectOfType<FonduAuNoir>().FadeOut());
+        yield return new WaitForSeconds(1);
+        index = SceneManager.GetActiveScene().buildIndex;
+        index++;
+
+        SceneManager.LoadScene(index);
     }
 
     public void LaserHit()

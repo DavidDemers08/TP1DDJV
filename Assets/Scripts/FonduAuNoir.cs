@@ -46,8 +46,7 @@ public class FonduAuNoir : MonoBehaviour
         col.a = 1f;
         sprite.color = col;
 
-        SceneManager.LoadScene(0);
-    }
+      }
 
 
 
