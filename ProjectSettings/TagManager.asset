@@ -53,6 +53,9 @@ TagManager:
   - name: Joueur
     uniqueID: 2084815771
     locked: 0
+  - name: Spawner
+    uniqueID: 3678112635
+    locked: 0
   - name: Fondu
     uniqueID: 174204157
     locked: 0
