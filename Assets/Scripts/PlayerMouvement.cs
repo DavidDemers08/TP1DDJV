@@ -13,7 +13,7 @@ public class PlayerMouvement : MonoBehaviour
     private Vector2 direction;
 
 
-    private bool enControle = true;
+    public bool enControle = true;
 
     // Start is called before the first frame update
     void Awake()
@@ -63,6 +63,10 @@ public class PlayerMouvement : MonoBehaviour
 
     public void LaserHit()
     {
+        if (!enControle)
+        {
+            return;
+        }
         DeathSequence();
     }
 

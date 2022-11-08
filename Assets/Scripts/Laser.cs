@@ -21,9 +21,16 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        angle += 0.001f;
+        angle += 0.005f;
+        if (angle >= 360)
+        {
+            angle = 0;
+        }
+        Debug.Log(angle);
+
         laser.EndPos = new Vector2(rayon * Mathf.Sin(angle), rayon * Mathf.Cos(angle));
-        RaycastHit2D hit = Physics2D.Raycast(laser.StartPos, laser.EndPos);
+
+        RaycastHit2D hit = Physics2D.Raycast(laser.StartPos, laser.EndPos,rayon);
 
         if (hit.collider != null)
         {
