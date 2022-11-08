@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Joueur
   - Water
   - UI
-  - 
-  - 
+  - Obstacle
+  - Ennemi
   - 
   - 
   - 
@@ -47,11 +47,11 @@ TagManager:
   - name: Decorations
     uniqueID: 716158649
     locked: 0
-  - name: Joueur
-    uniqueID: 2084815771
-    locked: 0
   - name: Mur
     uniqueID: 2085524651
+    locked: 0
+  - name: Joueur
+    uniqueID: 2084815771
     locked: 0
   - name: Fondu
     uniqueID: 174204157

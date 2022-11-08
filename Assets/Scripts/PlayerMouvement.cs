@@ -11,7 +11,7 @@ public class PlayerMouvement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 direction;
-    private bool deathAnimFinished = false;
+
 
     private bool enControle = true;
 
@@ -25,8 +25,6 @@ public class PlayerMouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Loop");
-        Debug.Log(enControle);
         if (enControle)
         {
             anim.SetFloat("Horizontal", direction.x);
@@ -56,7 +54,11 @@ public class PlayerMouvement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DeathSequence();
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ennemi"))
+        {
+            DeathSequence();
+        }
+        
     }
 
     private void DeathSequence()
@@ -80,5 +82,6 @@ public class PlayerMouvement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(FindObjectOfType<FonduAuNoir>().FadeOut());
+        
     }
 }
