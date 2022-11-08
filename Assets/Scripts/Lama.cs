@@ -48,8 +48,12 @@ public class Lama : MonoBehaviour
             walking = false;
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Joueur"))
             {
-                direction = visionDirection;
-                walking = true;
+                if (hit.collider.gameObject.GetComponent<PlayerMouvement>().enControle)
+                {
+                    direction = visionDirection;
+                    walking = true;
+                }
+               
             }
         }
         else
