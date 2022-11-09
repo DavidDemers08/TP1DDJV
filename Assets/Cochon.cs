@@ -54,4 +54,13 @@ public class Cochon : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D hit)
+    {
+        if (hit.gameObject.tag == "destructeur")
+        {
+            Destroy(anim);
+            Destroy(this.gameObject);
+        }
+    }
 }

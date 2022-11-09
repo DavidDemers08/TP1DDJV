@@ -6,15 +6,14 @@ public class CochonGenerator : MonoBehaviour
 {
     public GameObject Cochon;
     private float accumulateurTemps = 0.0f;
-    public float tempsdistance = 5.0f;
+    public float tempsdistance = 10.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        Instantiate(Cochon, transform.position, Quaternion.identity);
+        Transform monCochon = Instantiate(Cochon, transform.position, Quaternion.identity).transform;
+        Physics2D.IgnoreCollision(monCochon.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -26,14 +25,11 @@ public class CochonGenerator : MonoBehaviour
 
         if (accumulateurTemps > tempsdistance)
         {
-            // chronometre facon vieille ecole frere.
-            Instantiate(Cochon, transform.position, Quaternion.identity);
+            Transform monCochon = Instantiate(Cochon, transform.position, Quaternion.identity).transform;
+            Physics2D.IgnoreCollision(monCochon.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+
             accumulateurTemps = 0.0f;
             float ratio = (Time.time + 5.0f) / 5.0f;
-
-            //temps = Random.Range(0.3f, 1.0f);
         }
-
-
     }
 }
