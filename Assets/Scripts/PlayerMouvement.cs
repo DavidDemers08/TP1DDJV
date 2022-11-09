@@ -11,6 +11,8 @@ public class PlayerMouvement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 direction;
+    private bool celebGauche = false;
+    private bool celebDroite = false;
 
 
     public bool enControle = true;
@@ -51,6 +53,17 @@ public class PlayerMouvement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
         }
+
+        if (celebGauche)
+        {
+            rb.velocity = new Vector2(-1, 0) * vitesse;
+        }
+
+        if (celebDroite)
+        {
+            rb.velocity = new Vector2(0.5f, 0) * vitesse;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -65,7 +78,7 @@ public class PlayerMouvement : MonoBehaviour
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("DouzaineOeuf"))
         {
-            Celebration();
+            StartCoroutine(Celebration());
         }
 
     }
@@ -96,9 +109,30 @@ public class PlayerMouvement : MonoBehaviour
         StartCoroutine(Death());
     }
 
-    private void Celebration()
+    private IEnumerator Celebration()
     {
         enControle = false;
+
+        anim.SetFloat("Vitesse", 1);
+        anim.SetFloat("Horizontal", -1);
+        celebGauche = true;
+        yield return new WaitForSeconds(1f);
+        anim.SetFloat("Vitesse", 0);
+        anim.SetFloat("LastH", -1);
+        celebGauche = false;
+        yield return new WaitForSeconds(1f);
+        anim.SetFloat("Vitesse", 1);
+        anim.SetFloat("Horizontal", 1);
+        celebDroite = true;
+        yield return new WaitForSeconds(1f);
+        anim.SetFloat("Vitesse", 0);
+        anim.SetFloat("LastH", 1);
+        celebDroite = false;
+        yield return new WaitForSeconds(1f);
+        anim.SetFloat("LastH", 0);
+        anim.SetFloat("LastV", -1);
+        StartCoroutine(FadeIN());
+
     }
 
     private IEnumerator Death()
@@ -116,5 +150,12 @@ public class PlayerMouvement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(FindObjectOfType<FonduAuNoir>().FadeOut());
         
+    }
+
+    private IEnumerator FadeIN()
+    {
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(FindObjectOfType<FonduAuNoir>().FadeIn());
+        SceneManager.LoadScene(0);
     }
 }
