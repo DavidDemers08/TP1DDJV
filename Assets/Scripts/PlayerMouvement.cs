@@ -63,7 +63,11 @@ public class PlayerMouvement : MonoBehaviour
         {
             StartCoroutine(NextLevel());
         }
-        
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("DouzaineOeuf"))
+        {
+            Celebration();
+        }
+
     }
 
     private IEnumerator NextLevel()
@@ -90,10 +94,11 @@ public class PlayerMouvement : MonoBehaviour
         enControle = false;
         Instantiate(deathAnimation, transform.position, Quaternion.identity);
         StartCoroutine(Death());
-        
-        
-       
-        
+    }
+
+    private void Celebration()
+    {
+        enControle = false;
     }
 
     private IEnumerator Death()
